@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#" target="_blank">
-    <img alt="learn_CSS Logo" width="100" src="css.png">
+    <img alt="learn_CSS Logo" width="100" src="logo.svg">
   </a>
 </p>
 
