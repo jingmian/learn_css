@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        blockquote {
+            background-color: red;
+            border: 2px solid green;
+        }
+
+        .fix-this {
+            all: unset;
+        }
+/**
+inherit:继承父元素的属性
+initial:设置默认浏览器属性,黑色
+unset: 更改为自然继承
+ */
+    </style>
+</head>
+<body>
+<blockquote>
+    <p>This blockquote is styled</p>
+</blockquote>
+
+<blockquote class="fix-this">
+    <p>This blockquote is not styled</p>
+</blockquote>
+
+</body>
+</html>
