@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /**
+        color 应用在直接子元素，也影响其他后代 — 直接子元素<li>，和第一个嵌套列表中的子项。
+        然后添加了一个 special 类到第二个嵌套列表其中使用了不同的颜色。然后通过它的子元素继承。
+        像 widths (上面提到的), margins, padding, 和 borders 不会被继承。
+        如果borders可以被继承，每个列表和列表项都会获得一个边框 — 可能就不是我们想要的结果!
+        哪些属性属于默认继承很大程度上是由常识决定的。
+         */
+        .main {
+            color: rebeccapurple;
+            border: 2px solid #ccc;
+            padding: 1em;
+        }
+
+        .special {
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<ul class="main">
+    <li>Item One</li>
+    <li>Item Two
+        <ul>
+            <li>2.1</li>
+            <li>2.2</li>
+        </ul>
+    </li>
+    <li>Item Three
+        <ul class="special">
+            <li>3.1
+                <ul>
+                    <li>3.1.1</li>
+                    <li>3.1.2</li>
+                </ul>
+            </li>
+            <li>3.2</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
