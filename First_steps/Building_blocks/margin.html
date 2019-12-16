@@ -18,11 +18,26 @@
             margin-left: 4em;
         }
 
+        /*外边距折叠*/
+        /*如果你有两个外边距相接的元素，这些外边距将合并为一个外边距，即最大的单个外边距的大小*/
+        .one {
+            margin-bottom: 50px;
+        }
+
+        .two {
+            margin-top: 30px;
+        }
+
+
     </style>
 </head>
 <body>
 <div class="container">
     <div class="box">Change my margin.</div>
+</div>
+<div class="container">
+    <p class="one">I am paragraph one.</p>
+    <p class="two">I am paragraph two.</p>
 </div>
 
 </body>
