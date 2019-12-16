@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p,
+        ul {
+            border: 2px solid rebeccapurple;
+        }
+
+        span,
+        li {
+            border: 2px solid blue;
+        }
+
+        ul {
+            display: inline-flex;/*既有行内元素,又有块元素特征*/
+            list-style: none;
+            padding: 0;
+        }
+
+        .inline {
+            display: inline;
+        }
+/**
+我们可以看到 inline 元素在下面例子中的表现。 <span> 在第一段默认是内联元素所以不换行。
+
+还有一个 <ul> 设置为 display: inline-flex，使得在一些flex元素外创建一个内联框。
+
+最后设置两个段落为 display: inline。  inline flex 容器和段落在一行上而不是像块级元素一样换行。
+
+你可以修改 display: inline 为 display: block 或者 display: inline-flex 改为 display: flex 来观察显示模式切换。
+ */
+    </style>
+</head>
+<body>
+<p>
+    I am a paragraph. Some of the
+    <span>words</span> have been wrapped in a
+    <span>span element</span>.
+</p>
+<ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+</ul>
+<p class="inline">I am a paragraph. A short one.</p>
+<p class="inline">I am another paragraph. Also a short one.</p>
+
+</body>
+</html>
