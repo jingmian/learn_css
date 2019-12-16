@@ -17,16 +17,26 @@
 
         /*
         较小数量的值会循环—在上面的例子中有四个背景图像，但是只有两个背景位置值。
-        前两个位置值将应用于前两个图像，然后它们将再次循环—image3将被赋予第一个位置值，image4将被赋予第二个位置值。*/
-         */
+        前两个位置值将应用于前两个图像，然后它们将再次循环—image3将被赋予第一个位置值，image4将被赋予第二个位置值。
+        */
+
         .bg{
             background-image: url(image1.png), url(image2.png), url(image3.png), url(image1.png);
             background-repeat: no-repeat, repeat-x, repeat;
             background-position: 10px 20px,  top right;
         }
+
+        .box1 {
+            background:
+                    linear-gradient(105deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,1) 96%) center center / 400px 200px no-repeat,
+                    url(big-star.png) center no-repeat,
+                    rebeccapurple;
+        }
+
     </style>
 </head>
 <body>
 <div class="box"></div>
+<div class="box1"></div>
 </body>
 </html>
