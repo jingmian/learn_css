@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /**
+        background-size:cover
+        cover —浏览器将使图像足够大，使它完全覆盖了盒子区，同时仍然保持其高宽比。在这种情况下，有些图像可能会跳出盒子外
+        contain — 浏览器将使图像的大小适合盒子内。在这种情况下，如果图像的长宽比与盒子的长宽比不同，则可能在图像的任何一边或顶部和底部出现间隙。
+         */
+        .box {
+            background-image: url(balloons.jpg);
+            background-repeat: no-repeat;
+            background-size: 100px 10em;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
