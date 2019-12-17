@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        首先，我们将16px设置为<html>元素的字体大小。
+
+概括地说，em单位的意思是“父元素的字体大小”。带有ems类的<ul>内的<li>元素从它们的父元素中获取大小。因此，每一个连续的嵌套级别都会逐渐变大，因为每个嵌套的字体大小都被设置为1.3em—是其父嵌套字体大小的1.3倍。
+
+概括地说，rem单位的意思是“根元素的字体大小”。(“根em”的rem标准。)<ul>内的<li>元素和一个rems类从根元素(<html>)中获取它们的大小。这意味着每一个连续的嵌套层都不会不断变大。
+
+
+         */
+
+        html {
+            font-size: 16px;
+        }
+
+        .ems li {
+            font-size: 1.3em;
+        }
+
+        .rems li {
+            font-size: 1.3rem;
+        }
+
+
+    </style>
+</head>
+<body>
+<ul class="ems">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three
+        <ul>
+            <li>Three A</li>
+            <li>Three B
+                <ul>
+                    <li>Three B 2</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<ul class="rems">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three
+        <ul>
+            <li>Three A</li>
+            <li>Three B
+                <ul>
+                    <li>Three B 2</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
