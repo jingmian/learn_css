@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        在颜色上设置alpha通道与使用我们前面看到的opacity属性有一个关键区别。
+        当你使用不透明度时，你让元素和它里面的所有东西都不透明，而使用RGBA颜色只让你指定的颜色不透明。
+         */
+        .one {
+            background-color: rgba(2, 121, 139, .3);
+        }
+
+        .two {
+            background-color: rgba(197, 93, 161, .7);
+        }
+
+        .three {
+            background-color: rgba(18, 138, 125, .9);
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="box one">rgba(2, 121, 139, .3)</div>
+    <div class="box two">rgba(197, 93, 161, .7)</div>
+    <div class="box three">rgba(18, 138, 125, .9)</div>
+</div>
+
+</body>
+</html>
