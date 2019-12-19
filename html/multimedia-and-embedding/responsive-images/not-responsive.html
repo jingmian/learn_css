@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+        body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+        a{color:#2d374b;text-decoration:none}
+        a:hover{color:#cd0200;text-decoration:underline}
+        em{font-style:normal}
+        li{list-style:none}
+        img{border:0;vertical-align:middle}
+        table{border-collapse:collapse;border-spacing:0}
+        p{word-wrap:break-word}
+        body{
+            background-color: gray;
+        }
+
+        #conter{
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        header{
+           background-image: url("header.jpg");
+           background-repeat: no-repeat;
+           background-position: top center;
+
+           height: 200px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+        section{
+            background-color: white;
+            padding: 20px;
+
+        }
+        section h1{
+            padding: 20px 0;
+        }
+
+        section img{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+
+        }
+    </style>
+</head>
+<body>
+<div id="conter">
+   <header></header>
+   <section>
+       <h1>My website</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget venenatis ligula. Ut lacinia at dolor vitae pulvinar. Aliquam pretium dignissim eros. Integer faucibus, dui non aliquet bibendum, lectus orci lobortis odio, ornare porttitor est tellus eget velit. Nulla eros elit, malesuada id neque vel, viverra vehicula neque. Nullam auctor turpis non leo iaculis finibus. Quisque blandit arcu venenatis libero tempor, ac pulvinar ligula dapibus.</p>
+       <!--https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images-->
+       <picture>
+           <!--当屏幕小于799px为真时,读取elva-480w-close-portrait.jpg-->
+           <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+           <source media="(min-width: 800px)" srcset="elva-800w.jpg">
+           <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+       </picture>
+       <p>
+           Suspendisse potenti. Ut in luctus eros. Mauris pulvinar vehicula aliquet. Etiam imperdiet eleifend luctus. Duis ut justo nec eros ornare consectetur. Vestibulum convallis condimentum varius. Maecenas rutrum porta varius. Phasellus volutpat sem id sagittis luctus. Morbi vitae quam vitae nisi iaculis dignissim.
+       </p>
+       <img src="elva-fairy-800w.jpg">
+       <p>Header image originally by Miwok.</p>
+   </section>
+</div>
+</body>
+</html>
