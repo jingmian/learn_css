@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*创建了一个网格，包含了三个200像素宽的列轨道。子元素将在网格上每个网格单元中展开*/
+        /*通过 grid-template-columns 和 grid-template-rows 属性来定义网格中的行和列*/
+        .wrapper {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+
+        }
+
+        /*它起始轨道为20像素，接着重复了6个1fr的轨道，最后再添加了一个20像素的轨道。*/
+        .wrapper1{
+            display: grid;
+            grid-template-columns: 20px repeat(6, 1fr) 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+</div>
+
+<div class="wrapper1">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+</div>
+</body>
+</html>
