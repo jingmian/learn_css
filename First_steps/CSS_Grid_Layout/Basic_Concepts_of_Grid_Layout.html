@@ -10,12 +10,17 @@
             display: grid;
             grid-template-columns: 200px 200px 200px;
 
+            /*grid-auto-rows 属性来确保在隐式网格中创建的轨道是200像素高*/
+            grid-auto-rows: 200px;
+
         }
 
         /*它起始轨道为20像素，接着重复了6个1fr的轨道，最后再添加了一个20像素的轨道。*/
         .wrapper1{
             display: grid;
-            grid-template-columns: 20px repeat(6, 1fr) 20px;
+            grid-template-columns: 20px repeat(3, 1fr) 20px;
+           /*想让我的行的高度永远不会缩小到100像素以下，但是如果我的内容达到300像素高了,也会自动延伸到这个高度*/
+            grid-auto-rows: minmax(100px, auto);
         }
     </style>
 </head>
